@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn_quad" onclick="criar_elemento()">Criar elemento</button>
+    <script>
+        function criar_elemento() {
+
+            console.log('criando o quadrado...');
+            var quadrado = document.createElement('div');
+            quadrado.style.height = '100px';
+            quadrado.style.width = '100px';
+            quadrado.style.backgroundColor = '#f00';
+
+            console.log('inserindo o quadrado...');
+            var container_element = document.querySelector('body');
+            container_element.appendChild(quadrado);
+        }
+    </script>
+</body>
+
+</html>
