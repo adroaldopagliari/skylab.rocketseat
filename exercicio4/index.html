@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Exercício 3</title>
+    <title>Exercício 4</title>
 </head>
 
 <body>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
     <script>
         var nomes = ["Diego", "Gabriel", "Lucas"];
         lista = document.createElement('ul');
@@ -22,6 +25,17 @@
 
         var container = document.querySelector('body');
         container.appendChild(lista);
+
+        function adicionar() {
+            novoItem = document.createElement('li');
+            valorInput = document.querySelector('input[name=nome]').value;
+            console.log(valorInput);
+            itemLista = document.createTextNode(valorInput);
+            novoItem.appendChild(itemLista);
+            var container = document.querySelector('ul');
+            container.appendChild(novoItem);
+            document.querySelector('input[name=nome]').value = null;
+        }
     </script>
 </body>
 
