@@ -1,2 +1,5 @@
 # skylab.rocketseat
-JavaScript training - Exercises and a sample App.
+JavaScript training 
+
+Basic js exercises, promises, async requests and DOM manipulation.
+
