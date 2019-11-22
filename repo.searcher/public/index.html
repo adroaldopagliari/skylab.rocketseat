@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github repositories searcher</title>
+
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        li {
+            clear: both;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 80px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        strong {
+            font-size: 20px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" id="formSearchRepo">
+        <input type="text" id="inputRepo" placeholder="repository's name" maxlength="50">
+        <button type="submit" id="buttonSearchRepo">Search</button>
+    </form>
+
+    <ul id="repositoriesList">
+        <li>
+            <img src="https://avatars0.githubusercontent.com/u/28929274?v=4" alt="">
+            <strong>rocketseat.com.br</strong>
+            <p>Rocketseat trainning</p>
+            <a target="_blank" href="#">Link</a>
+        </li>
+        <li>
+            <img src="https://avatars0.githubusercontent.com/u/28929274?v=4" alt="">
+            <strong>rocketseat.com.br</strong>
+            <p>Rocketseat trainning</p>
+            <a target="_blank" href="#">Link</a>
+        </li>
+    </ul>
+
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
